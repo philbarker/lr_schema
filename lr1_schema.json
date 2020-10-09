@@ -13,18 +13,9 @@
   "properties": {
     "@context": {
       "type": "object",
-      "description": "allow flexible context, can add other ns prefixes",
-      "required": [
-        "@base"
-      ],
-      "properties": {
-        "@base": {
-          "type": "string",
-          "format": "regex",
-          "pattern": "http://schema.org",
-          "description": "required: schema.org is base ns"
-        }
-      }
+      "name": "JSON Schema for @context of schema.org Learning Resource",
+      "description": "schema.org is @base namespace but others are allowed",
+      "$ref": "context.json"
     },
     "@id": {
       "type": "string",
