@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://example.com/product.schema.json",
+  "$id": "lr_schema.json",
   "name": "JSON Schema for schema.org Learning Resource",
   "description": "Attempt at a JSON Schema to create valid schema.org/LRMI JSON-LD descriptions of learning resources",
   "type": "object",
@@ -15,7 +15,7 @@
       "type": "object",
       "name": "JSON Schema for @context of schema.org Learning Resource",
       "description": "schema.org is @base namespace but others are allowed",
-      "$ref": "context.json"
+      "$ref": "./context.json"
     },
     "@id": {
       "type": "string",
