@@ -1,14 +1,15 @@
 {
   "@context": {
+    "@base": "http://schema.org",
     "oer": "http://oerschema.org"
   },
   "@id": "https://example.org/test#webpage",
   "@type": [
-    "LearningResource",
-    "WebPage"
+    "NotLearningResource",
+    "Book"
   ],
   "name": "anything",
-  "url": "http://example.org/test",
+  "url": "http:///example.org/test",
   "teaches": {
     "@id": "http://example.org/concept",
     "@type": "DefinedTerm",
