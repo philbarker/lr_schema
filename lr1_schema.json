@@ -15,13 +15,13 @@
       "type": "object",
       "description": "allow flexible context, can add other ns prefixes",
       "required": [
-        "@base"
+        "@vocab"
       ],
       "properties": {
-        "@base": {
+        "@vocab": {
           "type": "string",
           "format": "regex",
-          "pattern": "http://schema.org",
+          "pattern": "http://schema.org/",
           "description": "required: schema.org is base ns"
         }
       }

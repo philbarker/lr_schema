@@ -1,6 +1,6 @@
 {
   "@context": {
-    "@base": "http://schema.org",
+    "@vocab": "http://schema.org/",
     "oer": "http://oerschema.org"
   },
   "@id": "https://example.org/test#webpage",
