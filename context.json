@@ -1,17 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "lr_schema.json",
+  "$id": "http://example.com/product.schema.json",
   "name": "JSON Schema for @context of schema.org Learning Resource",
   "description": "schema.org is @base namespace but others are allowed",
   "type": "object",
   "required": [
-    "@base"
+    "@vocab"
   ],
   "properties": {
-    "@base": {
+    "@vocab": {
       "type": "string",
       "format": "regex",
-      "pattern": "http://schema.org",
+      "pattern": "http://schema.org/",
       "description": "required: schema.org is base ns"
     }
   }
