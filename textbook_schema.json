@@ -22,7 +22,7 @@
       "$ref": "http_uri_schema.json"
     },
     "@type": {
-      "$id": "textbookType_schema.json",
+      "$ref": "textbookType_schema.json",
       "name": "textbook-like resource types",
       "description": "required and allowed types for learning resources that are textbooks",
     },
@@ -34,7 +34,7 @@
       "description": "required: url is a http or https URI"
     },
     "teaches": {
-      "$id": "definedTerm_schema.json",
+      "$ref": "definedTerm_schema.json",
       "name": "Defined Term Schema",
       "description": "required and allowed properties of DefinedTerm",
     }
