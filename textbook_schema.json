@@ -12,7 +12,6 @@
   "additionalProperties": false,
   "properties": {
     "@context": {
-      "type": "object",
       "name": "JSON Schema for @context of schema.org Learning Resource",
       "description": "schema.org is @base namespace but others are allowed",
       "$ref": "./context.json"
@@ -23,7 +22,9 @@
       "$ref": "http_uri_schema.json"
     },
     "@type": {
-      "$ref": "type_lr_schema.json"
+      "$id": "textbookType_schema.json",
+      "name": "textbook-like resource types",
+      "description": "required and allowed types for learning resources that are textbooks",
     },
     "name": {
       "type": "string"
@@ -33,32 +34,9 @@
       "description": "required: url is a http or https URI"
     },
     "teaches": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "@id": {
-          "name": "URI @ids",
-          "description": "required: @id is a http or https URI; no bnodes refs here",
-          "$ref": "http_uri_schema.json"
-        },
-        "@type": {
-          "type": "string",
-          "format": "regex",
-          "pattern": "DefinedTerm"
-        },
-        "name": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "termCode": {
-          "type": "string"
-        },
-        "inDefinedTermSet": {
-          "type": "string"
-        }
-      }
+      "$id": "definedTerm_schema.json",
+      "name": "Defined Term Schema",
+      "description": "required and allowed properties of DefinedTerm",
     }
   }
 }
