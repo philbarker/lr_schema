@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "context_schema.json",
+  "$id": "context.json",
   "name": "JSON Schema for @context using schema.org as base",
   "description": "schema.org is @base namespace, but others are allowed",
   "type": "object",

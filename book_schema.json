@@ -43,7 +43,10 @@
     },
     "about": {
       "name":"The subject or topic of the book",
-      "$ref": "./about_thing_schema.json"
+      "oneOf": [
+        {"$ref": "./about_thing_schema.json"},
+        {"$ref": "./wd_uri_schema.json"}
+      ]
     },
     "author": {
       "name":"The author of the book",
