@@ -38,15 +38,15 @@
       "type": "string"
     },
     "url": {
-      "name":"The URL for information about the book"
-      "$ref": "http_uri_schema.json",
+      "name":"The URL for information about the book",
+      "$ref": "http_uri_schema.json"
     },
     "about": {
-      "name":"The subject or topic of the book"
-      "$ref": "about_thing_schema.json",
+      "name":"The subject or topic of the book",
+      "$ref": "about_thing_schema.json"
     },
     "author": {
-      "name":"The author of the book"
+      "name":"The author of the book",
       "$ref": "person_schema.json"
     }
   }
