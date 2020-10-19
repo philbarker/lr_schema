@@ -15,7 +15,7 @@
   "properties": {
     "@context": {
       "name": "JSON Schema for @context using schema.org as base",
-      "$ref": "./context.json"
+      "$ref": "context.json"
     },
     "@id": {
       "name": "wikidata URIs",
