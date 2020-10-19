@@ -15,12 +15,12 @@
   "properties": {
     "@context": {
       "name": "JSON Schema for @context using schema.org as base",
-      "$ref": "context.json"
+      "$ref": "./context.json"
     },
     "@id": {
       "name": "wikidata URIs",
       "description": "required: @id is from wikidata",
-      "$ref": "wd_uri_schema.json"
+      "$ref": "./wd_uri_schema.json"
     },
     "@type": {
       "name": "The resource type",
@@ -39,15 +39,15 @@
     },
     "url": {
       "name":"The URL for information about the book",
-      "$ref": "http_uri_schema.json"
+      "$ref": "./http_uri_schema.json"
     },
     "about": {
       "name":"The subject or topic of the book",
-      "$ref": "about_thing_schema.json"
+      "$ref": "./about_thing_schema.json"
     },
     "author": {
       "name":"The author of the book",
-      "$ref": "person_schema.json"
+      "$ref": "./person_schema.json"
     }
   }
 }
