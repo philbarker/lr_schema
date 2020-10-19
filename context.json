@@ -1,12 +1,11 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://example.com/product.schema.json",
-  "name": "JSON Schema for @context of schema.org Learning Resource",
-  "description": "schema.org is @base namespace but others are allowed",
+  "name": "JSON Schema for @context using schema.org as base",
+  "description": "schema.org is @base namespace, but others are allowed",
   "type": "object",
-  "required": [
-    "@vocab"
-  ],
+  "additionalProperties": false,
+  "required": [ "@vocab" ],
   "properties": {
     "@vocab": {
       "type": "string",

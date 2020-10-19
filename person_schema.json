@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "person_schema.json",
+  "name": "Person Schema",
+  "description": "required and allowed properties for a Person",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["@id", "@type", "familyName", "givenName"],
+  "properties": {
+    "@id": {
+      "description": "required: @id is a wikidata entity URI",
+      "$ref": "wd_uri_schema.json"
+    },
+    "@type": {
+      "description": "required: @type is Person",
+      "type": "string",
+      "format": "regex",
+      "pattern": "Person"
+    },
+    "familyName": {
+      "type": "string"
+    },
+    "givenName": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  }
+}

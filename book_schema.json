@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "book_schema.json",
+  "name": "JSON Schema for schema.org Book",
+  "description": "Attempt at a JSON Schema to create valid JSON-LD descriptions. Limited to using a few schema.org properties.",
+  "type": "object",
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "name",
+    "author"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "@context": {
+      "name": "JSON Schema for @context using schema.org as base",
+      "$ref": "./context.json"
+    },
+    "@id": {
+      "name": "wikidata URIs",
+      "description": "required: @id is from wikidata",
+      "$ref": "wd_uri_schema.json"
+    },
+    "@type": {
+      "name": "The resource type",
+      "description": "required and must be Book",
+      "type": "string",
+      "format": "regex",
+      "pattern": "^Book$"
+    },
+    "name": {
+      "name": "title of the book",
+      "type": "string"
+    },
+    "description": {
+      "name": "description of the book",
+      "type": "string"
+    },
+    "url": {
+      "name":"The URL for information about the book"
+      "$ref": "http_uri_schema.json",
+    },
+    "about": {
+      "name":"The subject or topic of the book"
+      "$ref": "about_thing_schema.json",
+    },
+    "author": {
+      "name":"The author of the book"
+      "$ref": "person_schema.json"
+    }
+  }
+}

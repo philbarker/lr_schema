@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "about_thing_schema.json",
+  "name": "About Thing Schema",
+  "description": "Required and allowed properties for a Thing being used to say what something is about.",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["@id"],
+    "properties": {
+      "@id": {
+        "description": "required: @id is a wikidata entity URI",
+        "$ref": "wd_uri_schema.json"
+      },
+      "@type": {
+        "description": "required: @type is from top two tiers in schema.org type hierarchy",
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string",
+          "uniqueItems": true,
+          "enum": [
+            "Thing",
+            "Person",
+            "Event",
+            "Intangible",
+            "CreativeWork",
+            "Organization",
+            "Product",
+            "Place"
+          ]
+        }
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "url": {
+        "$ref": "http_uri_schema.json"
+      }
+    }
+  }
+}

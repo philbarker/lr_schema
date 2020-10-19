@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "wd_uri_schema.json",
+  "name": "Wikidata URIs",
+  "description": "regexp for Wikidata URIs, useful for @id of entities",
+  "type": "string",
+  "format": "regex",
+  "pattern": "^https://www.wikidata.org/entity/Q[0-9]+"
+}

@@ -1,0 +1,21 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@id": "https://www.wikidata.org/entity/Q3107329",
+  "@type": "Book",
+  "name": "Hitchhikers Guide to the Galaxy",
+  "url": "http://example.org/hhgttg",
+  "author": {
+    "@type": "Person",
+    "@id": "https://www.wikidata.org/entity/Q42",
+    "familyName": "Adams",
+    "givenName": "Douglas"
+  },
+  "description": "...",
+  "about": [
+    {"@id": "https://www.wikidata.org/entity/Q3"},
+    {"@id": "https://www.wikidata.org/entity/Q1"},
+    {"@id": "https://www.wikidata.org/entity/Q2165236"}
+  ]
+}
